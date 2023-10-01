@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Outfit&family=Red+Hat+Display:wght@500&display=swap");
+
+:root {
+  --clr-paleblue: hsl(225, 100%, 94%);
+  --clr-brightblue: hsl(245, 75%, 52%);
+
+  --clr-brightblue2: hsl(245, 66%, 63%);
+
+  --clr-verypaleblue: hsl(225, 100%, 98%);
+  --clr-desaturatedblue: hsl(224, 23%, 55%);
+  --clr-darkblue: hsl(223, 47%, 23%);
+
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-900: 900;
+
+  --ff-redhat: "Red Hat Display", serif;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.attribution {
+  font-size: 0.7em;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: var(--ff-redhat);
+  background: var(--clr-paleblue);
+}
+
+.main {
+  margin: 2em 40%;
+  background-color: white;
+  min-width: 370px;
+  max-width: 370px;
+  border-radius: 1em;
+}
+p {
+  font-size: 1em;
+}
+
+h1 {
+  color: var(--clr-darkblue);
+  text-align: center;
+  font-weight: var(--fw-900);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.main-text {
+  line-height: 1.7em;
+}
+
+.text {
+  display: grid;
+  gap: 1em;
+  text-align: center;
+  color: var(--clr-desaturatedblue);
+  padding-bottom: 2.5em;
+}
+
+.text img {
+  border-radius: 1em 1em 0 0;
+}
+
+.flex-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-verypaleblue);
+  margin: 0 1em;
+  border-radius: 1em;
+}
+.flex-group a {
+  margin-left: 5em;
+  cursor: pointer;
+  color: var(--clr-brightblue);
+  font-weight: var(--fw-700);
+}
+
+.flex-group a:hover {
+  color: var(--clr-brightblue2);
+  text-decoration: none;
+}
+
+.plan {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.plan1 {
+  font-weight: var(--fw-700);
+  color: var(--clr-darkblue);
+}
+
+.plan2 {
+  font-weight: var(--fw-500);
+  color: var(--clr-desaturatedblue);
+}
+.button-payment {
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+}
+
+.payment {
+  margin: 1em 1em;
+  border-radius: 0.8em;
+  text-align: center;
+  padding: 0.8em;
+  background: var(--clr-brightblue);
+  color: white;
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+}
+
+.payment:hover {
+  background: var(--clr-brightblue2);
+}
+
+.cancel-order {
+  color: var(--clr-desaturatedblue);
+  font-weight: var(--fw-900);
+  text-align: center;
+  margin: 1em 0;
+}
+
+.cancel-order a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 520px) {
+  .main {
+    margin: 0 2em;
+  }
+}
