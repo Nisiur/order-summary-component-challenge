@@ -90,7 +90,10 @@ h6 {
 
 body {
   font-family: var(--ff-redhat);
-  background: var(--clr-paleblue);
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--clr-paleblue);
 }
 
 .main {
@@ -114,6 +117,10 @@ h1 {
 
 .main-text {
   line-height: 1.7em;
+}
+.text-test {
+  display: grid;
+  justify-content: flex-end;
 }
 
 .text {
@@ -165,13 +172,13 @@ h1 {
   font-weight: var(--fw-500);
   color: var(--clr-desaturatedblue);
 }
-.button-payment {
+.payment {
   margin: 1em 0;
   display: flex;
   justify-content: center;
 }
 
-.payment {
+.button-payment {
   margin: 1em 1em;
   border-radius: 0.8em;
   text-align: center;
@@ -183,7 +190,7 @@ h1 {
   cursor: pointer;
 }
 
-.payment:hover {
+.button-payment:hover {
   background: var(--clr-brightblue2);
 }
 
